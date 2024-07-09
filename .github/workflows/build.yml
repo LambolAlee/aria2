@@ -69,7 +69,7 @@ jobs:
       run: |
         autoreconf -i
     # - name: Setup compiler flags
-    #   run: |
+    #   run: | 1
     #     asanflags="-fsanitize=address,undefined -fno-sanitize-recover=undefined"
 
     #     CPPFLAGS="$asanflags -g3"
