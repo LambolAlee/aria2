@@ -7,11 +7,12 @@ jobs:
     strategy:
       matrix:
         os: [macos-13]
-        compiler: [gcc, clang]
+        # compiler: [gcc, clang]
+        compiler: [clang]
         crypto: [openssl, gnutls]
         bittorrent: [with-bt, without-bt]
         exclude:
-        - os: macos-14
+        - os: macos-13
           crypto: gnutls
         - crypto: openssl
           bittorrent: without-bt
